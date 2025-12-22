@@ -8,72 +8,71 @@ const CodeTeam = () => {
     {
       image: '/img/m.jpg',
       title: 'Makrem Snoussi',
-      subtitle: 'chairman & Lead Instructor',
-      handle: '@makremsnoussi',
+      subtitle: 'chairman ',
+      handle: 'makrem.snoussi@enicar.ucar.tn',
       borderColor: '#4F46E5',
       gradient: 'linear-gradient(145deg, #4F46E5, #7C3AED)',
-      url: 'https://linkedin.com/in/makrem-snoussi',
+      url: 'https://www.linkedin.com/in/makrem-snoussi-421b39286/',
       role: 'chairman'
     },
     {
       image: '/img/n.jpg',
       title: 'Nour Bribech  ',
       subtitle: 'vice-chairman ',
-      handle: '@nour_bribech',
+      handle: 'nour.bribech@enicar.ucar.tn',
       borderColor: '#10B981',
       gradient: 'linear-gradient(210deg, #10B981, #059669)',
-      url: 'https://linkedin.com/in/nour-bribech',
+      url: 'https://www.linkedin.com/in/nour-bribech-6aa169363/',
       role: 'vice-chairman'
     },
     {
       image: '/img/f.jpg',
       title: 'Fatma Bouajla',
       subtitle: 'general secretary',
-      handle: '@fatma bouajla',
+      handle: 'fatma.bouajla@enicar.ucar.tn',
       borderColor: '#F59E0B',
       gradient: 'linear-gradient(165deg, #F59E0B, #D97706)',
-      url: 'https://linkedin.com/in/fatma-bouajla',
+      url: 'https://www.linkedin.com/in/fatma-bouajla-7534b7338/',
       role: 'general secretary'
     },
     {
       image: '/img/w.jpg',
       title: ' Wissal Azzouz ',
       subtitle: 'Event manager',
-      handle: '@priyash_algo',
+      handle: 'wissal.azzouz@enicar.ucar.tn',
       borderColor: '#EF4444',
       gradient: 'linear-gradient(195deg, #EF4444, #DC2626)',
-      url: 'https://linkedin.com/in/wissal-azzouz',
+      url: 'https://www.linkedin.com/in/wissal-azzouz-b72a88333/',
       role: 'Event manager'
     },
     {
       image: '/img/c.jpg',
-      title: 'Bel Hadj Amor Chaker',
+      title: 'Mohamed Chaker Belhadj Amor',
       subtitle: 'treasurer',
-      handle: '@davidk_tech',
+      handle: 'MohamedChaker.BelhadjAmor@enicar.ucar.tn',
       borderColor: '#8B5CF6',
       gradient: 'linear-gradient(225deg, #8B5CF6, #7C3AED)',
-      url: 'https://linkedin.com/in/bel-hadj-amor-chaker',
+      url: 'https://www.linkedin.com/in/chaker-belhadj-amor/',
       role: 'treasurer'
     },
     {
       image: '/img/o.jpg',
-      title: 'Noussa Ons',
-      subtitle: 'Web Platform Dev',
-      handle: '@davidk_tech',
+      title:' Ons chebel',
+      subtitle: 'webmaster',
+      handle: 'ons.chebel@enicar.ucar.tn',
       borderColor: '#8B5CF6',
       gradient: 'linear-gradient(225deg, #8B5CF6, #7C3AED)',
-      url: 'https://linkedin.com/in/noussa-ons',
-      role: 'Full Stack Engineer'
+      role: 'webmaster'
     },
     {
       image: '/img/i.jpg',
       title: 'Akrout Isra',
-      subtitle: 'humain resources manager',
-      handle: '@taylorm_org',
+      subtitle: 'Humain Resources Manager',
+      handle: 'isra.akrout@enicar.ucar.tn',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg, #06B6D4, #0891B2)',
-      url: 'https://linkedin.com/in/akrout-isra',
-      role: 'humain resources manager'
+      
+      role: 'Humain Resources Manager'
     }
   ];
 

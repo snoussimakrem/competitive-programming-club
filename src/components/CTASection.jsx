@@ -87,7 +87,7 @@ const CTASection = () => {
               <div className="stat">
                 <Users size={24} />
                 <div>
-                  <div className="stat-number">2,500+</div>
+                  <div className="stat-number">200+</div>
                   <div className="stat-label">Active Members</div>
                 </div>
               </div>

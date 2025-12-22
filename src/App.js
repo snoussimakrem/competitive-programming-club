@@ -4,7 +4,7 @@ import LoadingAnimation from './components/LoadingAnimation';
 import SplashCursor from './components/SplashCursor';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
-import TrainingResources from './pages/TrainningResources'; // NOUVEAU
+//import TrainingResources from './pages/TrainningResources';  NOUVEAU
 import './App.css';
 
 function App() {

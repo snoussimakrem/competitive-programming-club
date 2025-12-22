@@ -14,11 +14,12 @@ const FeaturedEvents = () => {
       date: 'Every Wednesday',
       time: '2:00 PM - 5:00 PM ',
       participants: '30+',
-      difficulty: 'Beginner-Intermediate',
+      difficulty: 'Intermediate',
+      prize: 'Certificates',
       location: 'Annex Enicarthage',
       description: 'learn new lessons plus , practice algorithms in serveral problems.',
       featured: true,
-      status: 'upcoming'
+      status: 'ongoing'
     },
     {
       id: 2,
@@ -27,25 +28,25 @@ const FeaturedEvents = () => {
       date: 'Nov 22, 2025',
       time: '1:00 PM - 6:00 PM ',
       participants: '20',
-      difficulty: 'Beginner-Advanced',
+      difficulty: 'Beginner',
       prize: 'Certificates',
       location: 'Supcom',
-      description: 'Master CP techniques with real problems from LEETCODE.',
+      description: 'Master CP techniques with real problems from LEETCODE and learn from experts.',
       featured: true,
-      status: 'ongoing'
+      status: 'occurred '
     },
     {
       id: 3,
       title: 'Hawkins code',
       type: 'workshop',
-      date: 'Every Wednesday for month of october' ,
+      date: 'Every Wednesday for the month of october' ,
       time: '2:00 PM - 4:00 PM ',
       participants: '50+',
       difficulty: 'Beginner',
       location: 'Annex Enicarthage',
       description: 'Start your competitive programming journey with guided problem-solving.',
       featured: true,
-      status: 'ongoing'
+      status: 'occurred '
     },
     {
       id: 4,
@@ -59,7 +60,7 @@ const FeaturedEvents = () => {
       location: 'Virtual ',
       description: 'Full-scale ICPC style competition with real-world problem statements.',
       featured: true,
-      status: 'ongoing'
+      status: 'occurred '
     },
     {
       id: 5,
@@ -73,7 +74,7 @@ const FeaturedEvents = () => {
       location: 'On site',
       description: 'Compete against peers in a timed contest to test your skills and win prizes.',
       featured: false,
-      status: 'ongoing'
+      status: 'occurred '
     },
     {
       id: 6,
@@ -85,7 +86,7 @@ const FeaturedEvents = () => {
       location: 'on site',
       description: 'Discuss upcoming events, workshops, and club initiatives with members.',
       featured: false,
-      status: 'ongoing'
+      status: 'occurred '
     }
   ];
 
@@ -196,14 +197,17 @@ const FeaturedEvents = () => {
                     {event.difficulty}
                   </span>
                 </div>
-                <motion.button
+                <motion.a
+                  href="https://www.instagram.com/cpcenicarthage/"
                   className="register-button"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Register Now
+                  Look for Now
                   <ArrowRight size={18} />
-                </motion.button>
+                </motion.a>
               </div>
             </motion.div>
           ))}
@@ -218,7 +222,7 @@ const FeaturedEvents = () => {
         >
           <p className="cta-text">Want to see all events and their schedules?</p>
           <motion.a
-            href="/events"
+            href="https://www.instagram.com/cpcenicarthage/"
             className="btn btn-secondary"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

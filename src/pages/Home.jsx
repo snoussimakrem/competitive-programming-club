@@ -30,10 +30,10 @@ const Home = () => {
         <HeroSection />
         <FeaturesSection />
         <HowItWorks />
-        <CodeTeam />
-        <Testimonials />
         <FeaturedEvents />
+        <CodeTeam />
         <FeaturedResources />
+        <Testimonials />
         <CTASection />
       </main>
       <Footer />

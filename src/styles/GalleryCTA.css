@@ -60,6 +60,8 @@
     border-radius: 1.25rem;
     padding: 2.5rem 2rem;
     transition:all 0.3s ease;
+    width: 201.51px;
+    height: 239.05px;
 }
 .cta-feature:hover {
 transform: translateY(-5px);

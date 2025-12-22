@@ -8,45 +8,28 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: 'Alex Chen',
-      role: 'Computer Science Student',
-      rating: 5,
-      content: 'The club transformed my problem-solving skills. I went from struggling with basic algorithms to reaching Codeforces Expert in 6 months!',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-      achievement: 'Codeforces Expert'
+      name: 'Gennady Korotkevich (aka “tourist”)',
+      role: 'A Belarusian competitive programming legend',
+      content: 'I try various [strategies], and one of them is the right one. I am no genius. I am simply good at it.',
+      image: 'https://en.wikipedia.org/wiki/File:Korotkevich_ITMO.jpg',
+      achievement: 'Legendary competitor, multiple world titles'
     },
     {
-      name: 'Sarah Johnson',
-      role: 'Software Engineer Intern',
-      rating: 5,
-      content: 'The mock interviews and coding contests prepared me perfectly for my FAANG interviews. I received offers from three top tech companies!',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b786d4d4?w=400&h=400&fit=crop&crop=face',
-      achievement: 'FAANG Offers'
+      name: 'Petr Mitrichev',
+      role: 'A Russian competitive programmer',
+      content: 'Books are useful as reference, but working through actual contest problems is what builds skill',
+      image: 'https://www.redgreencode.com/wp-content/uploads/2018/12/CPFAQ-PetrMitrichev.png',
+      achievement: 'Longtime champion and community influencer'
     },
     {
-      name: 'David Park',
-      role: 'ICPC Participant',
-      rating: 5,
-      content: 'Our team qualified for regionals thanks to the intensive training sessions. The community support was invaluable during preparation.',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face',
-      achievement: 'ICPC Regionalist'
+      name: 'Errichto ',
+      role: 'A top competitive programmer',
+      content: 'Start by mastering basics, use online judges and editorials to learn, and focus on understanding rather than just memorizing solutions.',
+      image: 'https://static.licdn.com/aero-v1/sc/h/9c8pery4andzj6ohjkjp54ma2',
+      achievement: 'Top educators & public figures in CP learning'
     },
-    {
-      name: 'Maria Rodriguez',
-      role: 'Bootcamp Graduate',
-      rating: 5,
-      content: 'As a career switcher, the structured learning path and mentorship helped me build strong fundamentals quickly. Highly recommended!',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face',
-      achievement: 'Career Transition'
-    },
-    {
-      name: 'Kevin Zhang',
-      role: 'High School Programmer',
-      rating: 5,
-      content: 'The beginner-friendly resources and supportive community helped me win my first programming competition. Now I\'m mentoring others!',
-      image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005-128?w=400&h=400&fit=crop&crop=face',
-      achievement: 'Competition Winner'
-    }
+   
+
   ];
 
   const nextTestimonial = () => {
@@ -67,9 +50,9 @@ const Testimonials = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Member Experiences</h2>
+          <h2 className="section-title">Masters Quotes & Opinion </h2>
           <p className="section-subtitle">
-            Hear from our members about their journey in competitive programming
+            Hear from Legends about their journey in competitive programming
           </p>
         </motion.div>
 
@@ -100,11 +83,7 @@ const Testimonials = () => {
                 <div className="testimonial-content">
                   <p className="testimonial-text">"{testimonials[currentIndex].content}"</p>
                   
-                  <div className="rating">
-                    {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                      <Star key={i} size={20} fill="#FBBF24" stroke="#FBBF24" />
-                    ))}
-                  </div>
+                  
                 </div>
 
                 <div className="testimonial-author">
@@ -151,12 +130,12 @@ const Testimonials = () => {
           transition={{ delay: 0.2 }}
         >
           <div className="stat-item">
-            <div className="stat-number">98%</div>
-            <div className="stat-label">Satisfaction Rate</div>
+            <div className="stat-number">100%</div>
+            <div className="stat-label">beneficial</div>
           </div>
           <div className="stat-item">
-            <div className="stat-number">4.9/5</div>
-            <div className="stat-label">Average Rating</div>
+            <div className="stat-number">500+</div>
+            <div className="stat-label">inspiring Stories</div>
           </div>
           <div className="stat-item">
             <div className="stat-number">500+</div>
@@ -164,7 +143,7 @@ const Testimonials = () => {
           </div>
           <div className="stat-item">
             <div className="stat-number">100%</div>
-            <div className="stat-label">Recommend to Friends</div>
+            <div className="stat-label">Recommended</div>
           </div>
         </motion.div>
       </div>

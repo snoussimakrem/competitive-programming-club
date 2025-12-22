@@ -19,8 +19,10 @@ const FeaturedResources = () => {
       description: 'Interactive visualizations of common algorithms with step-by-step explanations.',
       icon: <BookOpen size={24} />,
       color: '#4F46E5',
-      featured: true
-    },
+      featured: true,
+      downloadHref: '/PDF/VisuAlgo_Overview.pdf',
+      previewHref: 'https://visualgo.net/en'
+      },
     {
       id: 2,
       title: 'Dynamic Programming Masterclass',
@@ -33,7 +35,9 @@ const FeaturedResources = () => {
       description: '10-hour comprehensive video series covering all DP patterns and variations.',
       icon: <Video size={24} />,
       color: '#10B981',
-      featured: true
+      featured: true,
+      downloadHref: '/PDF/dynamic-programming.pdf',
+      previewHref: 'https://youtu.be/oBt53YbR9Kk?si=ac8pPyWhASyeG1fb'
     },
     {
       id: 3,
@@ -47,7 +51,9 @@ const FeaturedResources = () => {
       description: 'Complete guide covering data structures, algorithms, and contest strategies.',
       icon: <FileText size={24} />,
       color: '#F59E0B',
-      featured: true
+      featured: true,
+      downloadHref: '/PDF/book.pdf',
+      previewHref: 'https://codeforces.com/blog/entry/116371'
     },
     {
       id: 4,
@@ -61,7 +67,9 @@ const FeaturedResources = () => {
       description: 'Ready-to-use templates for common algorithms and data structures.',
       icon: <Code size={24} />,
       color: '#EF4444',
-      featured: false
+      featured: false,
+      downloadHref: '/PDF/Using-the-C-Standard-Template-Libraries.pdf',
+      previewHref: 'https://codeforces.com/blog/entry/94933'
     },
     {
       id: 5,
@@ -75,9 +83,11 @@ const FeaturedResources = () => {
       description: 'Curated collection of 1000+ problems with solutions and explanations.',
       icon: <Database size={24} />,
       color: '#8B5CF6',
-      featured: false
+      featured: false,
+      downloadHref: 'https://github.com/Eronana/CodeforcesPDF/commit/9ed777b10d10176388c77f5cd25823c530862dd4',
+      previewHref: 'https://github.com/AliOsm/PDF-CodeForces-Problems'
     },
-    {
+   /* {
       id: 6,
       title: 'Interview Preparation Kit',
       type: 'package',
@@ -89,8 +99,10 @@ const FeaturedResources = () => {
       description: '30-day study plan with mock interviews and company-specific questions.',
       icon: <BookOpen size={24} />,
       color: '#06B6D4',
-      featured: false
-    }
+      featured: false,
+      downloadHref: '/resources/6/download',
+      previewHref: '/resources/6/download'
+    }  */
   ];
 
   const categories = [
@@ -192,22 +204,24 @@ const FeaturedResources = () => {
               </div>
 
               <div className="resource-actions">
-                <motion.button
+                <motion.a
+                  href={resource.downloadHref}
                   className="download-button"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Download size={18} />
                   Download
-                </motion.button>
-                <motion.button
+                </motion.a>
+                <motion.a
+                  href={resource.previewHref}
                   className="preview-button"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <ExternalLink size={18} />
                   Preview
-                </motion.button>
+                </motion.a>
               </div>
             </motion.div>
           ))}

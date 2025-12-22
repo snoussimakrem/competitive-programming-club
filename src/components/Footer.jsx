@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-  Code,
   Mail,
   Phone,
   MapPin,
-  Github,
+  Facebook,
+  Instagram,
   Twitter,
   Linkedin,
   Youtube,
@@ -15,41 +15,45 @@ import {
 import '../styles/Footer.css';
 
 const Footer = () => {
+  const handleEventsClick = () => {
+    window.location.href = '/#events';
+  };
+
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Features', href: '#features' },
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Team', href: '#team' },
-    { name: 'Events', href: '#events' },
-    { name: 'Resources', href: '#resources' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Join Now', href: '#join' }
+    { name: 'Home', href: '/#home' },
+    { name: 'Features', href: '/#features' },
+    { name: 'How It Works', href: '/#how-it-works' },
+    { name: 'Team', href: '/#team' },
+    { name: 'Events', href: '/#events' },
+    { name: 'Resources', href: '/#resources' },
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'Join Now', href: '/#join' }
   ];
 
   const resources = [
-    { name: 'Learning Paths', href: '/resources/paths' },
-    { name: 'Video Tutorials', href: '/resources/videos' },
-    { name: 'Practice Problems', href: '/resources/problems' },
-    { name: 'Code Templates', href: '/resources/templates' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Documentation', href: '/docs' }
+    { name: 'Learning Paths', href: '/#resources' },
+    { name: 'Video Tutorials', href: '/#resources' },
+    { name: 'Practice Problems', href: '/#resources' },
+    { name: 'Code Templates', href: '/#resources' },
+    { name: 'Blog', href: '/#resources' },
+    { name: 'Documentation', href: '/#resources' }
   ];
 
   const events = [
-    { name: 'Weekly Contests', href: '/events/contests' },
-    { name: 'Workshops', href: '/events/workshops' },
-    { name: 'Bootcamps', href: '/events/bootcamps' },
-    { name: 'Interview Prep', href: '/events/interview' },
-    { name: 'Calendar', href: '/calendar' },
-    { name: 'Past Events', href: '/events/past' }
+    { name: 'Weekly Contests', href: '/#events' },
+    { name: 'Workshops', href: '/#events' },
+    { name: 'Bootcamps', href: '/#events' },
+    { name: 'Interview Prep', href: '/#events' },
+    { name: 'Calendar', href: '/#events' },
+    { name: 'Past Events', href: '/#events' }
   ];
 
   const socialLinks = [
-    { icon: <Github size={20} />, href: 'https://github.com', label: 'GitHub' },
-    { icon: <Twitter size={20} />, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: <Linkedin size={20} />, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Youtube size={20} />, href: 'https://youtube.com', label: 'YouTube' },
-    { icon: <MessageCircle size={20} />, href: 'https://discord.com', label: 'Discord' }
+    { icon: <Facebook size={20} />, href: 'https://www.facebook.com/cpcenicarthage/', label: 'Facebook' },
+    { icon: <Instagram size={20} />, href: 'https://www.instagram.com/cpcenicarthage/', label: 'Twitter' },
+    { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/company/cpc-enicar/posts/?feedView=all', label: 'LinkedIn' },
+    ,
+    
   ];
 
   return (
@@ -64,7 +68,7 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <div className="footer-logo">
-                <Code size={32} />
+                <img src="/logo192.png" alt="CPC Logo" style={{ width: '32px', height: '32px' }} />
                 <div>
                   <h3 className="logo-text">Competitive Programming Club</h3>
                   <p className="logo-tagline">Master Algorithms • Conquer Contests • Build Skills</p>
@@ -158,15 +162,15 @@ const Footer = () => {
               <ul className="contact-info">
                 <li>
                   <Mail size={18} />
-                  <span>hello@cpclub.com</span>
+                  <span>cpcenicarthage@gmail.com</span>
                 </li>
                 <li>
                   <Phone size={18} />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+216 2136513</span>
                 </li>
                 <li>
                   <MapPin size={18} />
-                  <span>San Francisco, CA 94107</span>
+                  <span>Annexe Enicarthage , charguia 2</span>
                 </li>
               </ul>
               
@@ -200,10 +204,10 @@ const Footer = () => {
               © {new Date().getFullYear()} Competitive Programming Club. All rights reserved.
             </div>
             <div className="footer-links-bottom">
-              <a href="/privacy" className="footer-link-bottom">Privacy Policy</a>
-              <a href="/terms" className="footer-link-bottom">Terms of Service</a>
-              <a href="/cookies" className="footer-link-bottom">Cookie Policy</a>
-              <a href="/code-of-conduct" className="footer-link-bottom">Code of Conduct</a>
+              <a href="https://policies.google.com/privacy?hl=en-US" className="footer-link-bottom">Privacy Policy</a>
+              <a href="https://policies.google.com/terms?hl=en-US" className="footer-link-bottom">Terms of Service</a>
+              <a href="https://policies.google.com/privacy?hl=en-US#infosharing" className="footer-link-bottom">Cookie Policy</a>
+              <a href="https://developersonair.withgoogle.com/code-of-conduct" className="footer-link-bottom">Code of Conduct</a>
             </div>
           </div>
           

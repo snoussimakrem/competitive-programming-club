@@ -99,14 +99,14 @@ const HeroSection = () => {
               <div className="stat-icon">
                 <Code2 size={24} />
               </div>
-              <div className="stat-number">500+</div>
+              <div className="stat-number">200+</div>
               <div className="stat-label">Active Members</div>
             </div>
             <div className="stat">
               <div className="stat-icon">
                 <Trophy size={24} />
               </div>
-              <div className="stat-number">100+</div>
+              <div className="stat-number">10+</div>
               <div className="stat-label">Contests Hosted</div>
             </div>
             <div className="stat">
